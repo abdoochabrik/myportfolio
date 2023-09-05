@@ -12,6 +12,10 @@ import { AboutComponent } from './components/right-bar/about/about.component';
 import { ServiceComponent } from './components/right-bar/service/service.component';
 import { ContactComponent } from './components/right-bar/contact/contact.component';
 import { ResumeComponent } from './components/right-bar/resume/resume.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { CardModule } from 'primeng/card';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,9 @@ import { ResumeComponent } from './components/right-bar/resume/resume.component'
     BrowserModule,
     AppRoutingModule,
     AvatarModule,
-    ChipModule
+    ChipModule,
+    NgxExtendedPdfViewerModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

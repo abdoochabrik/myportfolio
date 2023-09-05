@@ -12,4 +12,8 @@ export class LeftBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  contact() {
+    window.location.href = 'mailto:abdoo.chbrik@gmail.com';
+  }
+
 }
