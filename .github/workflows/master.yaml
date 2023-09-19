@@ -7,8 +7,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    #- name: Checkout
-    #  uses: actions/checkout@v2
 
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
