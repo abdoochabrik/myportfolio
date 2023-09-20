@@ -23,9 +23,7 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          npm run build:prod
-          mv dist/myportfolio/* .
-          rm -rf dist
+          npm run build --configuration production --base-href https://abdoochabrik.github.io/myportfolio/
         env:
           CI: true
 
@@ -33,6 +31,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
-          publish_dir: .
+          publish_dir: dist/myportfolio/
           publish_branch: gh-pages
 
