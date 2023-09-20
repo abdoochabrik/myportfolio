@@ -1,7 +1,7 @@
 name: Deploy Angular App to GitHub Pages
 
 on:
-  "push:
+  push:
     branches:
       - master
 
