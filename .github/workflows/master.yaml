@@ -23,7 +23,7 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          npm run build --prod --output-path docs --base-href /myportfolio/
+          npm run build:prod
           mv dist/myportfolio/* .
           rm -rf dist
         env:
