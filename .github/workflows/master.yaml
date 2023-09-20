@@ -23,7 +23,7 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          npm run build --configuration production --base-href=https://abdoochabrik.github.io/myportfolio/
+          npm run build:prod
         env:
           CI: true
 
