@@ -23,7 +23,7 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          npm run build --prod
+          npm run build:prod
           mv dist/myportfolio/* .
           rm -rf dist
         env:
