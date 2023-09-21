@@ -22,17 +22,17 @@ jobs:
         run: npm install
 
       - name: Build and Deploy
-        run: |
-          npm run build:prod
+        run: npm run build:prod
         env:
           CI: true
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.TOKEN }}
-          publish_dir: dist/myportfolio/
-          publish_branch: gh-pages
-
+          publish_dir: dist/myportfolio
+          #publish_branch: gh-pages
+          enable_jekyll: true
 
 
