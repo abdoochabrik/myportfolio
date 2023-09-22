@@ -16,6 +16,7 @@
             "outputPath": "dist/myportfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/myportfolio/",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [

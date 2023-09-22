@@ -1,4 +1,4 @@
-name: Deploy Angular App to GitHub Page
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,36 +6,26 @@ on:
       - master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
 
-      - name: Install Dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Install angular cli
-        run: npm install -g @angular/cli
+    - name: Build
+      run: npm run build --prod
 
-      - name: Build and Deploy
-        run: npm run build:prod
-        env:
-          CI: true
-
-      - name: Deploy to GitHub Pages
-        #uses: peaceiris/actions-gh-pages@v3
-        run: ng serve
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: .
-          publish_branch: master
-          #enable_jekyll: true
-
-
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_dir: ./dist/myportfolio # Replace with your app's name
