@@ -14,7 +14,7 @@ import { ContactComponent } from './components/right-bar/contact/contact.compone
 import { ResumeComponent } from './components/right-bar/resume/resume.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { CardModule } from 'primeng/card';
-
+import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { CardModule } from 'primeng/card';
     NgxExtendedPdfViewerModule,
     CardModule
   ],
-  providers: [],
+  providers: [{provide:LocationStrategy,useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

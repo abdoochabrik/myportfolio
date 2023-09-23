@@ -16,12 +16,13 @@
             "outputPath": "dist/myportfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "baseHref": "/myportfolio/",
+            "baseHref": "/myportfolio",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/web.config",
               {
                 "glob": "**/*",
                 "input": "node_modules/ngx-extended-pdf-viewer/assets/",
