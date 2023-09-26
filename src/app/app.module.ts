@@ -18,6 +18,7 @@ import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 import { AccordionModule } from 'primeng/accordion';
 import { ProjectItemComponent } from './components/right-bar/projects/project-item/project-item.component';
 import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     AvatarModule,
+    ToastModule,
     ChipModule,
     NgxExtendedPdfViewerModule,
     CardModule,

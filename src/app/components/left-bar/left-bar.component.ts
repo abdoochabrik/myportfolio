@@ -16,4 +16,22 @@ export class LeftBarComponent implements OnInit {
     window.location.href = 'mailto:abdoo.chbrik@gmail.com';
   }
 
+  openLink(link:string){
+    switch(link){
+      case 'github':
+        console.log('github')
+        window.open('https://github.com/abdoochabrik','_blank');
+        break;
+      case 'twitter':
+        console.log('twitter')
+        window.open('https://twitter.com/chabrik99', '_blank');
+        break;
+      case 'linkedin':
+        window.open('https://www.linkedin.com/in/chabrik-abdellatif/', '_blank');
+        break
+    }
+  }
+
+
+
 }

@@ -8,19 +8,22 @@
           <label class="mt-4" style="color:white;font-family:Lucida Console;">Chabrik Abdellatif</label>
 
           <div class="grid mt-3">
-            <a class="col" style="color: white;" href="https://github.com/abdoochabrik" role="button"
+            <a class="col" style="color: white;"
+               (click)="openLink('github')"
+               role="button"
             ><i class="pi pi-github"></i
           ></a>
 
-          <a class="col" style="color:  white;" href="#!" role="button"
+          <a class="col" style="color:  white;" href="#!" role="button" (click)="openLink('twitter')"
             ><i class="fab fa-twitter fa-lg"></i
           ></a>
 
-          <a class="col" style="color:  white;" href="#!" role="button"
+          <a class="col" style="color:  white;" href="#!" role="button" (click)="contact()"
             ><i class="fab fa-google fa-lg"></i
           ></a>
 
-          <a  class="col" style="color: white;" href="https://www.linkedin.com/in/chabrik-abdellatif/" role="button"
+          <a  class="col" style="color: white;"
+          (click)="openLink('linkedin')"  role="button"
             ><i class="fab fa-linkedin fa-lg"></i
           ></a>
           </div>
@@ -50,6 +53,6 @@
   </div>
 
 <div class="mt-6" style="align-self: center ;color:white">
-  &copy; Abdellatif Chabrikkkk
+  &copy; Abdellatif Chabrik
 </div>
 </div>

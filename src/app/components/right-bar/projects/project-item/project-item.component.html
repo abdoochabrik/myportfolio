@@ -1,6 +1,7 @@
 <div class="project-card">
+  <p-toast></p-toast>
   <p-avatar image="{{projectDetails.image}}" size="xlarge" shape="circle"></p-avatar>
   <h2 class="project-title">{{projectDetails.name}}</h2>
   <label>Context : {{projectDetails.context}}</label>
-  <p-button label="Visit" class="visit-btn" routerLink="{{projectDetails.link}}" styleClass="p-button-outlined p-button-info"></p-button>
+  <p-button label="Visit" (click)="openProject()" class="visit-btn" styleClass="p-button-outlined p-button-info"></p-button>
 </div>

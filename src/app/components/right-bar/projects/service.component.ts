@@ -18,7 +18,6 @@ export class ServiceComponent implements OnInit {
         name:"Identity Management Service",
         context:"CDI",
         description:"Développement de la plateforme web Ziwig qui permet la gestion des identités des patients dans plusieurs hôpitaux.",
-        link:"",
         image : "assets/ziwig.png"
         },
       {
@@ -39,7 +38,19 @@ export class ServiceComponent implements OnInit {
         name:"ODCO",
         context:"stage d'ouverture",
         description:"Mise en place d’une plateforme d’assistance et d’accompagnement économique et juridique des coopératives",
-        link:"#",
+        image:"assets/odco.png"
+      },
+      {
+        name:"Online library",
+        context:"Projet personnel",
+        description:"Développement d'une plateforme digitale pour garantir la taraçabilité au sein des bibliothéques contenant des livres historiques",
+        image:"assets/odco.png",
+        link:"https://github.com/abdoochabrik/clean-server-app"
+      },
+      {
+        name:"FreelanceEasy",
+        context:"Projet personnel",
+        description:"Développement d'une solution special aux freelancers pour etre notifié par les nouveaux oppurtunitées",
         image:"assets/odco.png"
       },
   ]
