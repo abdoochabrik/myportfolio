@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  pdfSrc: string = 'https://drive.google.com/file/d/1TRjffUOoNv2TaI_6xMF3dTGMj9HC3QCX/view?usp=sharing';
+  pdfSrc: string = 'assets/AbdellatifChabrikCV.pdf';
 
   constructor() { }
 
