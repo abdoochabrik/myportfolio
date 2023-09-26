@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/right-bar/home/home.component';
 import { AboutComponent } from './components/right-bar/about/about.component';
-import { ServiceComponent } from './components/right-bar/service/service.component';
+import { ServiceComponent } from './components/right-bar/projects/service.component';
 import { ResumeComponent } from './components/right-bar/resume/resume.component';
 import { ContactComponent } from './components/right-bar/contact/contact.component';
 
@@ -16,7 +16,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path:'service',
+    path:'projects',
     component: ServiceComponent
   },
   {
