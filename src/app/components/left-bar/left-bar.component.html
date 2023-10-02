@@ -1,4 +1,4 @@
-<div style="background-color: rgba(0,0,0,0.9);" class="h-full flex pt-5 flex-column">
+<!--div style="background-color: rgba(0,0,0,0.9);" class="h-full flex pt-5 flex-column">
   <div class="flex flex-column align-items-center">
 
           <p-avatar image="assets/winston.jpg"
@@ -55,4 +55,32 @@
 <div class="mt-6" style="align-self: center ;color:white">
   &copy; Abdellatif Chabrik
 </div>
+</!div-->
+<header>
+<div class="profile">
+  <p-avatar image="assets/chabrikEnPersonne.jpeg"
+          size="xlarge"
+          shape="circle"
+          ></p-avatar>
+  <h1>Chabrik Abdellatif</h1>
+  <div class="social-icons">
+      <a (click)="openLink('github')"><i class="pi pi-github"></i></a>
+      <a (click)="openLink('twitter')"><i class="fab fa-twitter fa-lg"></i></a>
+      <a  (click)="contact()"><i class="fab fa-google fa-lg"></i></a>
+      <a (click)="openLink('linkedin')"><i class="fab fa-linkedin fa-lg"></i></a>
 </div>
+</div>
+<nav>
+  <ul>
+    <li><a href=""><i  class="pi pi-home"></i>Home</a></li>
+    <li><a href=""><i  class="pi pi-user"></i>About</a></li>
+    <li><a href=""><i  class="pi pi-file"></i>Resume</a></li>
+    <li><a href=""><i  class="pi pi-pi pi-code"></i>Project</a></li>
+    <li><a href=""><i  class="pi pi-pi pi-envelope"></i>Contact</a></li>
+  </ul>
+</nav>
+
+<div class="footer">
+  <p>&copy; copyright 2023 <br> Developped By <a>Chabrik Abdellatif</a> </p>
+</div>
+</header>

@@ -19,6 +19,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { ProjectItemComponent } from './components/right-bar/projects/project-item/project-item.component';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
+import { ProjectsService } from './services/projects-service.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { ToastModule } from 'primeng/toast';
     BrowserAnimationsModule,
     ButtonModule
   ],
-  providers: [{provide:LocationStrategy,useClass:HashLocationStrategy}],
+  providers: [{provide:LocationStrategy,useClass:HashLocationStrategy},ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
