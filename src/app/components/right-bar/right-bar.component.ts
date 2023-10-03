@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightBarComponent implements OnInit {
 
+  sidebarVisible:boolean =false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    this.sidebarVisible = true
   }
 
 }

@@ -20,7 +20,7 @@ import { ProjectItemComponent } from './components/right-bar/projects/project-it
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { ProjectsService } from './services/projects-service.service';
-
+import { SidebarModule } from 'primeng/sidebar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { ProjectsService } from './services/projects-service.service';
     CardModule,
     AccordionModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    SidebarModule
   ],
   providers: [{provide:LocationStrategy,useClass:HashLocationStrategy},ProjectsService],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+div {
+  display: flex;
+}
+
+app-left-bar {
+  width: 300px;
+}
+
+app-right-bar {
+  flex: 1;
+  background-color: var(--bgColor);
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1050px) {
+  app-right-bar {
+     text-align: center;
+  }
+
+  div {
+    display: block;
+  }
+}
