@@ -1,7 +1,6 @@
 .background-image-container {
-  background-image: url('../../../../assets/me.jpeg');
+  background-image: url('../../../../assets/home.png');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
   width: 100%;
@@ -10,11 +9,25 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 240px;
+  top: 100px;
   position: absolute;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
+span {
+  color: #025D96;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #025D96;
+  border: white;
+  padding: 5px;
+  color: white;
+}
+p {
+  width: 280px;
+}
 .name {
    font-size: 35px;
    font-weight: 600;
@@ -27,3 +40,22 @@
   font-family: bold;
 }
 
+
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../../../../assets/home.png');
+  background-position: top right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1050px) {
+ .wrapper {
+  display: block;
+  text-align: center;
+ }
+}

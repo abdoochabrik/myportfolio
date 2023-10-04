@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadPDF() {
+    const downloadLink = document.getElementById('downloadLink');
+    downloadLink?.click();
+}
 }

@@ -1,6 +1,14 @@
 <div class="background-image-container">
   <div class="wrapper">
-      <span class="name">Abdellatif Chabrik</span>
-       <span class="profession">Je suis ingénieur logiciels</span>
+    <h4>Hi, there!</h4>
+    <h3>I'm <span>Chabrik Abdellatif</span></h3>
+    <p>a software engineer passionate about crafting efficient
+       and innovative solutions to complex problems,
+       driven by a love for clean code and technology's limitless possibilities.</p>
+    <div style="display: flex;flex-direction: row;justify-content: space-around;">
+    <button class="downloadBtn" (click)="downloadPDF()">Download my cv</button>
+    <button class="viewBtn" routerLink="/resume">View my cv</button>
+    </div>
   </div>
+  <a id="downloadLink" style="display: none;" href='assets/AbdellatifChabrikCV.pdf' download="ChabrikAbdellatifCv.pdf"></a>
 </div>

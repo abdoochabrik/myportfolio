@@ -1,4 +1,4 @@
-div {
+#parent {
   display: flex;
 }
 
@@ -12,12 +12,71 @@ app-right-bar {
   height: 100vh;
 }
 
+#MenuIcon {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: var(--themeColor);
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  z-index: 999;
+  display: none;
+}
+
+div nav {
+  margin-top: 30px;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 10px;
+  margin: 2px 0;
+  color: lightgray;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+nav ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover i {
+  color:  var(--themeColor);
+}
+
 @media only screen and (max-width: 1050px) {
   app-right-bar {
      text-align: center;
   }
 
-  div {
+  #parent {
+    display: block;
+  }
+
+  #MenuIcon {
     display: block;
   }
 }
+
+@media only screen and (min-width: 1050px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+

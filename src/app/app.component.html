@@ -1,8 +1,18 @@
-<!--div class="grid h-screen grid-nogutter">
-  <app-left-bar class="col-2"></app-left-bar>
-  <app-right-bar class="col-10 h-full overflow-y-scroll"></app-right-bar>
-</!--div-->
-<div>
+<i  class="pi pi-align-justify" id="MenuIcon" (click)="openDialog()" ></i>
+  <div class="card flex justify-content-center" >
+    <p-sidebar [(visible)]="sidebarVisible" position="top" styleClass="h-30rem bg-indigo-900" id="sidebar">
+      <nav>
+        <ul>
+          <li><a (click)="sidebarVisible = false" routerLink="home"><i  class="pi pi-home"></i>Home</a></li>
+          <li><a (click)="sidebarVisible = false" routerLink="about"><i  class="pi pi-user"></i>About</a></li>
+          <li><a  (click)="sidebarVisible = false" routerLink="resume"><i  class="pi pi-file"></i>Resume</a></li>
+          <li><a  (click)="sidebarVisible = false" routerLink="projects"><i  class="pi pi-pi pi-code"></i>Project</a></li>
+          <li><a   (click)="sidebarVisible = false" ><i  class="pi pi-pi pi-envelope"></i>Contact</a></li>
+        </ul>
+      </nav>
+  </p-sidebar>
+  </div>
+<div id="parent">
 <app-left-bar ></app-left-bar>
-<app-right-bar ></app-right-bar>
+<app-right-bar></app-right-bar>
 </div>
