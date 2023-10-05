@@ -10,46 +10,46 @@ export class ProjectsService {
     {
       name:"Identity Management Service",
       context:"CDI",
-      description:"Développement de la plateforme web Ziwig qui permet la gestion des identités des patients dans plusieurs hôpitaux.",
+      description:"Development of the Ziwig web platform, which allows for the management of patient identities in multiple domains (hospitals)",
       image : "assets/ziwig.png"
       },
     {
     name:"Endocoach",
-    context:"stage de fin d'étude",
-    description:"Endocoach est une application mobile multiOs de nouvelle génération qui améliore la prise en charge de l’endométriose",
+    context:"End-of-study internship",
+    description:"Endocoach is a next-generation multi-OS mobile application that improves the management of endometriosis.",
     link:"https://play.google.com/store/apps/details?id=com.ziwig.moncoach.endoziwig",
     image : "assets/ziwig.png"
     },
     {
-      name:"Immobilier-vente-achat",
-      context:"Stage technique",
+      name:"Real estate sales and purchases.",
+      context:"Technical internship",
       description:"Développement d’une plateforme en ligne et d’une application mobile de gestion de la vente et de la location de biens immobiliers, avec la carte de localisation et la visite virtuelle.",
       link:"https://github.com/ElMehdiEchchad/Immobilier-vente-achat",
       image:"assets/immobilier.png"
     },
     {
       name:"ODCO",
-      context:"stage d'ouverture",
-      description:"Mise en place d’une plateforme d’assistance et d’accompagnement économique et juridique des coopératives",
+      context:"Internship",
+      description:"Establishment of a platform for economic and legal support and assistance to cooperatives.",
       image:"assets/odco.png"
     },
     {
       name:"Site Web personnel",
-      context:"Projet personnel",
+      context:"Personal project",
       description:"J'ai developpé ce site pour présenter mon profile,mon parcours académique,mes expériences et mes projets ",
       image:"assets/presentation.jpg"
     },
     {
       name:"Online library",
-      context:"Projet personnel",
-      description:"Développement d'une plateforme digitale pour garantir la taraçabilité au sein des bibliothéques contenant des livres historiques",
+      context:"Personal project",
+      description:"Development of a digital platform to ensure traceability within libraries containing historical and golden books.",
       image:"assets/library.png",
       link:"https://github.com/abdoochabrik/clean-server-app"
     },
     {
       name:"FreelanceEasy",
-      context:"Projet personnel",
-      description:"Développement d'une solution special aux freelancers pour etre notifié par les nouveaux oppurtunitées",
+      context:"Personal project",
+      description:"Development of a specialized solution for freelancers to be notified of new opportunities.",
       image:"assets/easy.jpg"
     },
   ]

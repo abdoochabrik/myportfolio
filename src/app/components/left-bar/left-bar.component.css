@@ -17,12 +17,21 @@ header .profile {
   margin: 10px 0;
 }
 
+
 header .profile img {
-  width: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 10px solid var(--iconColor);
+  border: 2px solid var(--iconColor);
+  overflow: hidden;
 }
 
+img {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  border-radius: 50%; /* Make the border radius 50% to create a circle */
+  overflow: hidden; /* Hide any image overflow outside the circle */
+}
 header .profile h1 {
   color: white;
   font-weight: 600;
@@ -92,6 +101,11 @@ header nav ul li a:hover i {
 
 header .profile  p a{
   color: var(--themeColor);
+}
+
+.footer p label {
+  color: var(--iconColor);
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 1050px) {

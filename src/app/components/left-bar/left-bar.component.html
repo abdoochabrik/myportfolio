@@ -1,9 +1,11 @@
 <header>
 <div class="profile">
-  <p-avatar image="assets/chabrikEnPersonne.jpeg"
+
+  <img src="assets/chabrikEnPersonne.jpeg" alt="My Image">
+  <!--p-avatar image="assets/chabrikEnPersonne.jpeg"
           size="xlarge"
           shape="circle"
-          ></p-avatar>
+  ></!--p-avatar-->
   <h1>Chabrik Abdellatif</h1>
   <div class="social-icons">
       <a (click)="openLink('github')"><i class="pi pi-github"></i></a>
@@ -17,12 +19,12 @@
     <li><a  routerLink="home"><i  class="pi pi-home"></i>Home</a></li>
     <li><a  routerLink="about"><i  class="pi pi-user"></i>About</a></li>
     <li><a  routerLink="resume"><i  class="pi pi-file"></i>Resume</a></li>
-    <li><a  routerLink="projects"><i  class="pi pi-pi pi-code"></i>Project</a></li>
+    <li><a  routerLink="projects"><i  class="pi pi-pi pi-code"></i>Projects</a></li>
     <li><a  (click)="contact()"><i  class="pi pi-pi pi-envelope"></i>Contact</a></li>
   </ul>
 </nav>
 
 <div class="footer">
-  <p>&copy; copyright 2023 <br> Developped By <a>Chabrik Abdellatif</a> </p>
+  <p>&copy; copyright {{currentYear}} <br> Developed By <label>Chabrik Abdellatif</label> </p>
 </div>
 </header>

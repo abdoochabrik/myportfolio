@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeftBarComponent implements OnInit {
 
+  public currentYear:number = new Date().getFullYear()
+
   constructor() { }
 
   ngOnInit(): void {

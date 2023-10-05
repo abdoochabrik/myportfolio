@@ -1,23 +1,10 @@
-.background-image-container {
-  background-image: url('../../../../assets/home.png');
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  top: 100px;
-  position: absolute;
-  margin-left: 20px;
-}
-
 span {
   color: #025D96;
 }
 
+h3 {
+  font-size: 25px;
+}
 button {
   border-radius: 10px;
   background-color: #025D96;
@@ -28,34 +15,32 @@ button {
 p {
   width: 280px;
 }
-.name {
-   font-size: 35px;
-   font-weight: 600;
-   font-family: bold;
-}
-
-.profession {
-  font-size: 20px;
-  text-decoration: solid underline #59BDFA 2px;
-  font-family: bold;
-}
-
-
-
-.home {
-  height: 100vh;
-  width: 100%;
-  background-image: url('../../../../assets/home.png');
-  background-position: top right;
-  background-size: cover;
+.container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
+  padding: 20px;
 }
 
-@media only screen and (max-width: 1050px) {
- .wrapper {
-  display: block;
+.paragraph {
+  flex: 1;
+  padding: 15px;
+}
+
+.image {
+  flex: 1;
+  padding: 10px;
   text-align: center;
- }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1050px) {
+  .image {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
