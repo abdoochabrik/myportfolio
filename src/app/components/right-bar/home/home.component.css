@@ -43,4 +43,10 @@ p {
     display: flex;
     flex-direction: column;
   }
+
+  .paragraph {
+    flex: 1;
+    text-align: center;
+    padding-top: 110px;
+  }
 }
