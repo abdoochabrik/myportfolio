@@ -19,36 +19,31 @@ header .profile {
 
 
 header .profile img {
-  width: 120px;
-  height: 120px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   border: 2px solid var(--iconColor);
   overflow: hidden;
 }
 
-img {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Set the desired height */
-  border-radius: 50%; /* Make the border radius 50% to create a circle */
-  overflow: hidden; /* Hide any image overflow outside the circle */
-}
+
 header .profile h1 {
   color: white;
   font-weight: 600;
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 header .profile .social-icons a {
   display: inline-block;
-  width: 36px;
-  height: 36px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   text-align: center;
-  line-height: 37px;
+  line-height: 2.8rem;
   background-color: var(--iconColor);
   color: white;
-  font-size: 18px;
+  font-size: 1.3rem;
   margin: 1.5px;
   transition: 0.4s;
 }
@@ -58,7 +53,7 @@ header .profile .social-icons a:hover {
 }
 
 header nav {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 header nav ul li {
@@ -68,17 +63,17 @@ header nav ul li {
 header nav ul li a {
   display: inline-block;
   text-decoration: none;
-  padding: 7px 10px;
-  margin: 2px 0;
+  padding: 0.5rem 0.6rem;
+  margin: 0.1rem 0;
   color: lightgray;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.6px;
+  font-size: 1rem;
+  letter-spacing: 0.09rem;
 }
 
 header nav ul li a i{
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
     transition: 0.4s;
 }
 
@@ -91,7 +86,7 @@ header nav ul li a:hover i {
   background-color: #025D96;
   width: 300px;
   color: lightgray;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.6 px;
   position: fixed;
   bottom: 0;
